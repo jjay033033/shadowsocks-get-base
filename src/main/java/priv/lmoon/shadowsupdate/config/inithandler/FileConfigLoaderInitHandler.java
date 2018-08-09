@@ -12,12 +12,11 @@ public class FileConfigLoaderInitHandler implements ConfigLoaderInitHandler{
 	
 	private String configPath;
 	
-	private long lastModify;
+	private long lastModify = 0L;
 
-	public FileConfigLoaderInitHandler(String configPath, long lastModify) {
+	public FileConfigLoaderInitHandler(String configPath) {
 		super();
 		this.configPath = configPath;
-		this.lastModify = lastModify;
 	}
 
 	@Override
