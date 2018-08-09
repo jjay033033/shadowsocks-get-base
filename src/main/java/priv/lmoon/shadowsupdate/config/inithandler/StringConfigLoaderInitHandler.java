@@ -4,7 +4,7 @@ import java.util.Map;
 
 import priv.lmoon.shadowsupdate.util.XmlUtil;
 
-public abstract class StringConfigLoaderInitHandler implements ConfigLoaderInitHandler{
+public class StringConfigLoaderInitHandler implements ConfigLoaderInitHandler{
 	
 	private String xmlStr;
 

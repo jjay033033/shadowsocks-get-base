@@ -8,7 +8,7 @@ import java.util.Map;
 
 import priv.lmoon.shadowsupdate.util.XmlUtil;
 
-public abstract class FileConfigLoaderInitHandler implements ConfigLoaderInitHandler{
+public class FileConfigLoaderInitHandler implements ConfigLoaderInitHandler{
 	
 	private String configPath;
 	
