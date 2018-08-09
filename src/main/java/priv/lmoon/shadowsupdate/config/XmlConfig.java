@@ -46,7 +46,6 @@ public class XmlConfig {
 	public static void init(ConfigLoaderInitHandler initHandler) {
 		Map xmlMap = initHandler.getXmlMap();
 		load(xmlMap);
-		initHandler.init();
 		if(initHandler.needSchedule()){
 			//启动定时任务
 			Executors.newScheduledThreadPool(1).scheduleWithFixedDelay(new Runnable() {
