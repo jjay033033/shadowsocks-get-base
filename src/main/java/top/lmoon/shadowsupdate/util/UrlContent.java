@@ -61,7 +61,9 @@ public class UrlContent {
 				}
 				UrlInfo urlInfoNew = normalizeUrl(urlStrNew);
 				urlStrNew = urlInfoNew.getUrl();
-				urlHandler.changeUrl(urlStr, urlStrNew);
+				if(urlHandler!=null){
+					urlHandler.changeUrl(urlStr, urlStrNew);
+				}
 				url = new URL(urlStrNew);
 				connection = (HttpURLConnection) url.openConnection();
 				setConnectionProperties(connection, urlInfoNew.isHttps());
