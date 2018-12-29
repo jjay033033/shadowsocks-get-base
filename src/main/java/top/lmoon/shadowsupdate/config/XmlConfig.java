@@ -63,7 +63,7 @@ public class XmlConfig {
 			if (map == null || map.isEmpty()) {
 				throw new Exception("map为空！");
 			}
-			logger.info("config.xml is updated！");
+			logger.debug("config.xml is updated！");
 			initServerMap();
 			ConfigListFactory.init();
 		} catch (Exception e) {
